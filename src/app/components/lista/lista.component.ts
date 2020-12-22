@@ -10,8 +10,7 @@ export class ListaComponent implements OnInit {
   items: any
   constructor(private serviceItems: ConexionService) {
     this.serviceItems.getItems().subscribe(res => {
-      this.items = res
-      console.log(this.items, '<<*--s---');
+      this.items = res;
     });
   }
 

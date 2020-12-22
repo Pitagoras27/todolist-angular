@@ -1,1 +1,10 @@
-<p>lista-add works!</p>
+<form (ngSubmit)="addNewItem()">
+  <input
+    type="text"
+    placeholder="Ingresa tu nombre"
+    name="name"
+    class="form-control"
+    [(ngModel)]="item.name"
+  />
+  <button type="submit" class="btn btn-warning mt-3"> Agregar </button>
+</form>

@@ -26,4 +26,8 @@ export class ConexionService {
   getItems() {
     return this.items;
   }
+
+  addItems(newItem: Item) {
+    this.db.collection('items').add(newItem);
+  }
 }
