@@ -1,7 +1,17 @@
+<div class="component">
+  <div class="row">
+    <div class="col-6">
+      <app-lista></app-lista>
+      <ul>
+        <li *ngFor="let item of items | async ">
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <app-lista-add></app-lista-add>
+    </div>
+  </div>
+</div>
 <div>
-  <ul>
-    <li *ngFor="let item of items | async ">
-      {{ item.name }}
-    </li>
-  </ul>
 </div>
